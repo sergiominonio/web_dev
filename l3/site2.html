@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Purchase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="split-layout">
+        <div class="left-side form2-bg" style="background-image: url('https://raw.githubusercontent.com/steminist-ua/dstu/421fce994e4db7142f71cd96e1cb3e5ee5f26caf/pzs/internet_programming/l3/assects/side_background2.svg'); justify-content: center;">
+            
+            <div class="glass-panel">
+                <div class="logo-container">
+                    <img src="https://raw.githubusercontent.com/steminist-ua/dstu/421fce994e4db7142f71cd96e1cb3e5ee5f26caf/pzs/internet_programming/l3/assects/logo.svg" alt="Logo" class="logo">
+                </div>
+                <h2 class="glass-title">Complete your purchase</h2>
+                
+                <div class="order-item">
+                    <div class="item-name"><span class="color-box blue"></span> Golden Penny Spread</div>
+                    <div class="item-price">$14.79</div>
+                </div>
+                <div class="order-item">
+                    <div class="item-name"><span class="color-box blue"></span> Orange Blossom Honey</div>
+                    <div class="item-price">$20.21</div>
+                </div>
+                <div class="order-item">
+                    <div class="item-name"><span class="color-box blue"></span> Cocopops Cereal</div>
+                    <div class="item-price">$15.00</div>
+                </div>
+
+                <hr class="glass-divider">
+
+                <div class="summary-row"><span>Subtotal</span> <strong>$50.00</strong></div>
+                <div class="summary-row"><span>Taxes & Fees</span> <strong>$10.00</strong></div>
+                <div class="summary-row"><span>Promo Code - 1E5344505</span> <strong>-$30%</strong></div>
+                
+                <hr class="glass-divider">
+                
+                <div class="summary-row total"><span>Total</span> <strong>$42.00</strong></div>
+
+                <a href="site1.html" class="back-link">← Previous page</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="form-container">
+                <button type="button" class="primary-btn">Pay with PayPal</button>
+                <p class="divider-text">Or pay with card</p>
+
+                <form action="index.html">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Card details</label>
+                        <input type="text" placeholder="1234 1234 1234 1234" class="card-input" required>
+                        <div class="card-row">
+                            <input type="text" placeholder="MM / YY" required>
+                            <input type="text" placeholder="CVC" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Name on card</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Country or region</label>
+                        <select>
+                            <option>United States</option>
+                            <option>Ukraine</option>
+                        </select>
+                        <input type="text" placeholder="ZIP" required style="margin-top: -1px;">
+                    </div>
+
+                    <button type="submit" class="primary-btn" style="margin-top: 20px;">Pay $42.00</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

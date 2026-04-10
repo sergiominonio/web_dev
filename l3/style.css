@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+    color: #333;
+}
+
+.split-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px;
+}
+
+.right-side {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.social-buttons {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.social-btn {
+    background: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #03A9F4;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.checkbox-group input {
+    margin-top: 4px;
+}
+
+.checkbox-group label {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.primary-btn {
+    width: 100%;
+    background-color: #03A9F4;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #0288D1;
+}
+
+
+
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.glass-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.color-box.blue { background-color: #03A9F4; }
+.color-box.orange { background-color: #FF9800; }
+.color-box.light-blue { background-color: #29B6F6; }
+
+.glass-divider {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin: 20px 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.summary-row.total {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.divider-text {
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.card-input {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.card-row {
+    display: flex;
+}
+
+.card-row input {
+    flex: 1;
+    border-radius: 0;
+    margin-top: -1px;
+}
+
+.card-row input:first-child { border-bottom-left-radius: 6px; }
+.card-row input:last-child { border-bottom-right-radius: 6px; margin-left: -10px; }
