@@ -155,7 +155,7 @@ input:focus, select:focus {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 40px;
-    color: white;
+    color: black;
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
@@ -175,6 +175,7 @@ input:focus, select:focus {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 600;
+    color: white;
 }
 
 .order-item {
@@ -195,8 +196,6 @@ input:focus, select:focus {
     vertical-align: middle;
 }
 .color-box.blue { background-color: #03A9F4; }
-.color-box.orange { background-color: #FF9800; }
-.color-box.light-blue { background-color: #29B6F6; }
 
 .glass-divider {
     border: 0;
@@ -219,7 +218,7 @@ input:focus, select:focus {
 
 .back-link {
     display: inline-block;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 14px;
     margin-top: 30px;
