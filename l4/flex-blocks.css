@@ -1,0 +1,24 @@
+.container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}/*# sourceMappingURL=flex-blocks.css.map */

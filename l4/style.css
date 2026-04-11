@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: #5B5F71;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content, header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+header .logo img {
+  height: 30px;
+}
+header .navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+header .navigation a {
+  color: #242942;
+  transition: color 0.3s;
+}
+header .navigation a:hover {
+  text-decoration: underline;
+}
+header .navigation .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #A0A1AC;
+  border-radius: 50%;
+}
+header .navigation .login {
+  color: #A0A1AC;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.main-content .text-section {
+  flex: 1;
+  max-width: 50%;
+}
+.main-content .text-section .tag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.main-content .text-section .tag .new {
+  background-color: #242942;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+.main-content .text-section .tag .tag-text {
+  color: #A0A1AC;
+}
+.main-content .text-section h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #242942;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.main-content .text-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.main-content .text-section .cta-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-content .text-section .cta-group .btn {
+  background-color: #FF5C5C;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+.main-content .text-section .cta-group .btn:hover {
+  opacity: 0.8;
+}
+.main-content .text-section .cta-group .preview-text {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #A0A1AC;
+  letter-spacing: 2px;
+}
+.main-content .image-section {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-content .image-section .bg-shape {
+  position: absolute;
+  top: -350px;
+  right: -25vw;
+  width: 60vw;
+  height: 600px;
+  background-color: #EEF3F6;
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+.main-content .image-section .devices-img {
+  max-width: 160%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+  transform: translateX(44%);
+}/*# sourceMappingURL=style.css.map */
