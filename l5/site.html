@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-grid">
+        
+        <aside class="sidebar">
+            <div class="sidebar__menu-btn">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="sidebar__nav">
+                <a href="#" class="active">🏠</a>
+                <a href="#" class="animated-icon">🤍</a>
+                <a href="#">⚙️</a>
+                <a href="#">❓</a>
+            </nav>
+            <div class="sidebar__mobile-search">🔍</div>
+        </aside>
+
+        <main class="main-content">
+            <div class="search-bar">
+                <span>🔍</span>
+                <input type="text" placeholder="Busca algo de nuestro menu...">
+            </div>
+
+            <section class="categories-section">
+                <div class="section-header">
+                    <h1>Categorias</h1>
+                    <p>Elige nuestras deliciosas pizzas</p>
+                </div>
+                
+                <div class="categories-tabs">
+                    <button class="tab active">🍕 Pizzas</button>
+                    <button class="tab">🥟 Empanadas</button>
+                    <button class="tab">🍷 Bebidas</button>
+                    <button class="tab">🍰 Postres</button>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="images/Pizza muzzarella.png" alt="Pizza muzzarella">
+                        <div class="product-card__info">
+                            <h3>Pizza muzzarella</h3>
+                            <p class="price">$ 1200<span>.00</span></p>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/Pizza pepperoni.png" alt="Pizza pepperoni">
+                        <div class="product-card__info">
+                            <h3>Pizza pepperoni</h3>
+                            <p class="price">$ 1100<span>.00</span></p>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/Pizza napolitana.png" alt="Pizza napolitana">
+                        <div class="product-card__info">
+                            <h3>Pizza napolitana</h3>
+                            <p class="price">$ 1050<span>.00</span></p>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/Pizza jamón y morrón.png" alt="Pizza jamón y morrón">
+                        <div class="product-card__info">
+                            <h3>Pizza jamón y morrón</h3>
+                            <p class="price">$ 900<span>.00</span></p>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="checkout-sidebar">
+            <div class="checkout-header">
+                <h2>Mi orden</h2>
+                <div class="checkout-subtitle">
+                    <h3>Checkout</h3>
+                    <span>✕</span>
+                </div>
+                <p>Confirme su pedido</p>
+            </div>
+
+            <div class="warning-msg">
+                ⚠️ El pago se efectuará al llegar la orden, específicamente en efectivo y el envío es propio del negocio. Al finalizar el checkout le llegará el recibo vía whatsapp.
+            </div>
+
+            <form class="checkout-form">
+                <div class="form-group">
+                    <label>Ingrese su nombre *</label>
+                    <input type="text" value="John Doe" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Ingrese su número de teléfono *</label>
+                    <input type="text" value="11 9999-9999" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Ingrese su documento de identidad</label>
+                    <input type="text" value="99.999.999" readonly>
+                </div>
+                
+                <button type="button" class="submit-btn">Generar recibo</button>
+            </form>
+        </aside>
+
+    </div>
+</body>
+</html>
